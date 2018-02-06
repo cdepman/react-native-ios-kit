@@ -7,6 +7,7 @@ import {
   Text,
   PanResponder,
   findNodeHandle,
+  NativeModules,
 } from 'react-native';
 
 import withTheme from '../../core/withTheme';
@@ -14,7 +15,7 @@ import withTheme from '../../core/withTheme';
 import type { Theme } from '../../types/Theme';
 
 // eslint-disable-next-line
-const UIManager = require('NativeModules').UIManager;
+const { UIManager } = NativeModules;
 
 const SECTION_HEIGHT = 18;
 
